@@ -1,38 +1,1745 @@
-.App {
-  text-align: center;
+:root {
+  --bgcolor: #a0bad2;
+  --innerbgcolor: #e1f0ff;
+  --menubgcolor: #d3e8fb;
+  --menuactivecolor: #7c87b9;
+  --headingcolor: #376692;
+  --graphBarColor1: #01ceff;
+  --graphBarColor2: #3346d2;
+  --menuColor: #767171;
+  --amountColor: #4e597d;
+  --purpleBgColor: #ebecfa;
+  --blueBgColor: #cfedf3;
+  --yelloColor: #ecaf76;
+  --yellowBgColor: #feeee0;
+  --redColor: #ea325b;
+  --redBgColor: #fef2f6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.InnerBox {
+  background-color: var(--bgcolor);
+  border-radius: 15px;
+  padding: 8rem 3rem 8rem 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.middle {
+  padding: 25px 40px 0px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeIcon {
+  width: 2vw;
+}
+
+.logoDiv {
+  width: 8% !important;
+  align-items: center !important;
+}
+
+.logoDiv p {
+  font-size: 1vw;
+}
+
+.menuActiveDiv,
+.menuDiv {
+  height: 85px !important;
+  width: 75% !important;
+  font-size: 1vw;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.menuDiv {
+  box-shadow: 0px 1px 3px #B2B2B2 inset;
+  color: var(--menuColor);
+  background-color: var(--menubgcolor);
+}
+
+.menuActiveDiv {
+  background-color: white;
+  color: var(--menuactivecolor);
+}
+
+.heading {
+  color: var(--headingcolor);
+  font-family: 'Calibri Light' !important;
+  font-size: 2vw !important;
+  font-weight: 500 !important;
+}
+
+.select .MuiSelect-select {
+  padding: 5px 0px;
+}
+
+.select fieldset {
+  border: 0 !important;
+}
+
+.search {
+  padding: '2px 4px';
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 2vw;
+  width: 10vw;
+  background-color: var(--menubgcolor) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.search .MuiInputBase-root {
+  font-size: 1vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sales {
+  color: var(--headingcolor);
+  font-family: 'Calibri Light' !important;
+  font-size: 1.9vw !important;
+}
+
+.ChartSelect .MuiInputBase-root {
+  width: 130px;
+}
+
+.select .MuiSelect-select {
+  font-size: 1vw;
+}
+
+.leftArrow {
+  height: 20px !important;
+  width: 10% !important;
+  box-shadow: 0px 1px 3px #B2B2B2 inset;
+  color: var(--menuColor) !important;
+  background-color: var(--menubgcolor);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.month {
+  font-size: 1vw !important;
+}
+
+.rightArrow {
+  height: 20px !important;
+  width: 10% !important;
+  color: var(--menuColor) !important;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.amount {
+  font-size: 2vw;
+  color: var(--amountColor);
+}
+
+.upArrowLine {
+  font-size: 0.7vw !important;
+}
+
+.upArrowLine span {
+  color: green;
+}
+
+.upArrowLine span svg {
+  font-size: 1rem;
+}
+
+.info {
+  line-height: 0px;
+  font-size: 1vw;
+}
+
+.info p {
+  /* margin-top: revert; */
+  margin-top: 15px;
+}
+
+.info span svg {
+  width: 15px !important;
+}
+
+.firstCircleIcon {
+  color: var(--graphBarColor1);
+}
+
+.SecondCircleIcon {
+  color: var(--graphBarColor2);
+}
+
+.Charts {
+  width: 33vw !important;
+  height: 15vw !important;
+}
+
+.Charts svg {
+  height: 100%;
+  width: 100%;
+}
+
+.method {
+  font-size: 1.5vw;
+  color: var(--amountColor);
+}
+
+.lastModified {
+  color: var(--menuColor);
+  line-height: 5px;
+  font-size: 0.8vw;
+}
+
+.paypalImage,
+.CreditCardImage,
+.uploadImage {
+  border-radius: 15px;
+  box-shadow: 5px 10px 8px 0px #cdcdcd59;
+  width: 80%;
+  height: 90%;
+}
+
+.uploadImage {
+  box-shadow: 0px 1px 3px #B2B2B2 inset;
+  color: var(--menuColor);
+  background-color: var(--menubgcolor);
+  padding: 0.7vw;
+  cursor: pointer;
+}
+
+.InnerUploadImage {
+  height: 100%;
+  border-radius: 6px;
+  border: 2px dashed #B2B2B2;
+  font-size: 0.7vw;
+  line-height: 1.5vw;
+}
+
+.InnerUploadImage p {
+  margin-bottom: 0px;
+}
+
+.timelineDiv {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.timeline {
+  color: var(--amountColor);
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.AddProjectButton,
+.AddButton {
+  background-color: var(--graphBarColor2) !important;
+  text-transform: capitalize !important;
+  border-radius: 7px !important;
+}
+
+.moreButton {
+  background-color: var(--menubgcolor) !important;
+  color: var(--graphBarColor2) !important;
+  min-width: 40px !important;
+  border-radius: 7px !important;
+}
+
+.progressDiv {
+  line-height: 19px;
+  color: var(--menuColor);
+}
+
+.divider {
+  margin-top: -10px !important;
+}
+
+.progressBar {
+  margin-top: 13px;
+  width: 100px;
+}
+
+.ProjectPeaceDiv {
+  border-radius: 25px;
+  background-color: white;
+}
+
+.help {
+  height: 50%;
+  width: 100% !important;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 5px 10px 8px 0px #cdcdcd59;
+  z-index: 1;
+}
+
+.help:after {
+  content: "";
+  position: absolute;
+  margin-left: -1em;
+  margin-top: -1em;
+  left: 99%;
+  top: 54%;
+  border: 13px solid black;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-135deg);
+}
+
+.help .MuiTypography-root {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.help a {
+  text-decoration: none;
+  font-size: 0.7vw;
+}
+
+.help a svg {
+  font-size: 1rem !important;
+}
+
+.boy {
+  width: 8vw;
+}
+
+hr {
+  opacity: 1.25;
+}
+
+.projectLogo {
+  padding: 18px;
+  background-color: var(--blueBgColor);
+  border-radius: 10px;
+  color: var(--graphBarColor1);
+}
+
+.ProjectTitle {
+  font-size: 1.4vw !important;
+  font-weight: 600 !important;
+}
+
+.lorem {
+  color: var(--menuColor);
+  font-size: 13px !important;
+}
+
+.icons {
+  background-color: #eae9e9;
+  color: var(--menuColor);
+  border-radius: 50%;
+  height: 2.5vw !important;
+  width: 2.5vw !important;
+  cursor: pointer;
+}
+
+.icons svg {
+  font-size: 1.4vw !important;
+}
+
+.FileManager {
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.ManagerDiv {
+  padding: 20px;
+}
+
+.ManageDivTitle {
+  font-size: 0.9vw !important;
+}
+
+.created {
+  color: var(--menuColor);
+  font-size: 0.7vw !important;
+}
+
+.carouselDiv {
+  /* position: relative; */
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.carouselDiv ul {
+  gap: 0.5px;
+}
+
+.carouselDiv img {
+  border-radius: 15px;
+  width: 95%;
+  height: 6vw;
+}
+
+.carouselDiv .react-multiple-carousel__arrow {
+  min-width: 25px;
+  min-height: 25px;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 13px !important;
+}
+
+.pieChart ul {
+  font-size: 13px;
+}
+
+.pieChart .recharts-layer {
+  height: 240px;
+}
+
+/* ========================================================================================================================= */
+
+@media (max-width: 1400px) {
+
+  .menuActiveDiv,
+  .menuDiv {
+    height: 75px !important
   }
-  to {
-    transform: rotate(360deg);
+
+  .menuActiveDiv svg,
+  .menuDiv svg {
+    font-size: 22px;
+  }
+
+  .select .MuiSelect-select {
+    padding: 5px 0px;
+    font-size: 13px;
+  }
+
+  .month {
+    font-size: 13px !important;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 125px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .ChartSelect .MuiInputLabel-root {
+    font-size: 13px;
+    margin-top: 2px;
+  }
+
+  .info {
+    line-height: 0px;
+  }
+
+  .projectLogo {
+    padding: 15px;
+  }
+
+  .lorem {
+    font-size: 13px !important;
+  }
+
+  .AddButton {
+    padding: 4px 3px !important;
+    font-size: 12px !important;
+  }
+
+}
+
+@media (max-width: 1300px) {
+
+  .monthDiv {
+    column-gap: 10px !important;
+  }
+
+  .projectLogo {
+    padding: 10px;
+  }
+
+  .lorem {
+    font-size: 11px !important;
+  }
+
+  .AddButton {
+    padding: 0px 0px !important;
+    font-size: 10px !important;
+    min-width: 50px !important;
+  }
+
+  .AddButton .MuiButton-startIcon {
+    margin-right: 0px;
+  }
+
+  .moreButton {
+    min-width: 34px !important;
+  }
+
+  .lastModified {
+    line-height: 6px;
+  }
+
+  .paypalImage,
+  .uploadImage {
+    width: 90% !important;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 130px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .month {
+    font-size: 13px !important;
+  }
+
+  .progressDiv {
+    line-height: 16px;
+  }
+
+  .MuiMenuItem-root {
+    font-size: 14px !important;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .logoDiv p {
+    font-size: 1.1vw;
+  }
+
+  .menuDiv,
+  .menuActiveDiv {
+    height: 65px !important;
+    width: 80% !important;
+    font-size: 12px;
+  }
+
+  .menuDiv svg,
+  .menuActiveDiv svg {
+    font-size: 22px;
+  }
+
+  .search svg {
+    font-size: 20px;
+  }
+
+  .search .MuiInputBase-root {
+    font-size: 1.2vw;
+  }
+
+  .middle {
+    padding: 25px 25px 0px 10px !important;
+  }
+
+  .select {
+    font-size: 14px !important;
+  }
+
+  .MuiMenuItem-root {
+    font-size: 14px !important;
+  }
+
+  .search {
+    padding: 0px 0px !important;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 120px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+  .ChartDiv {
+    height: 150px;
+  }
+
+  .lastModified {
+    font-size: 1vw;
+  }
+
+  .paypalImage,
+  .CreditCardImage,
+  .uploadImage {
+    border-radius: 10px;
+  }
+
+  .InnerUploadImage svg {
+    font-size: 16px !important;
+  }
+
+  .timelineHeader {
+    padding: 15px 24px 8px 24px !important;
+  }
+
+  .progressBar {
+    width: 80px;
+  }
+
+  .AddProjectButton {
+    font-size: 11px !important;
+  }
+
+  .help .MuiTypography-root {
+    font-size: 1.2vw;
+  }
+
+  .help a svg {
+    font-size: 0.9rem !important;
+  }
+
+  .help a {
+    font-size: 0.8vw;
+  }
+
+  .help:after {
+    left: 96%;
+  }
+
+  .day {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .OuterBox {
+    padding: 30px !important;
+  }
+
+  .InnerBox {
+    padding: 6rem 2rem 6rem 2rem !important;
+  }
+
+  .logoDiv p {
+    font-size: 12px;
+  }
+
+  .menuDiv,
+  .menuActiveDiv {
+    height: 60px !important;
+    width: 80% !important;
+  }
+
+  .menuDiv svg,
+  .menuActiveDiv svg {
+    font-size: 22px;
+  }
+
+  .middle {
+    padding: 10px 20px 0px 20px !important;
+  }
+
+  .heading {
+    font-size: 2.1vw !important;
+  }
+
+  .search .MuiInputBase-root {
+    font-size: 14px;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 110px;
+    height: 27px;
+    font-size: 12px;
+  }
+
+  .ChartSelect label {
+    font-size: 15px !important;
+  }
+
+  .month {
+    font-size: 13px !important;
+  }
+
+  .sales {
+    font-size: 2.3vw !important;
+  }
+
+  .upArrowLine {
+    font-size: 9px !important;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  .select {
+    font-size: 14px !important;
+    height: 20px;
+  }
+
+  .MuiMenuItem-root {
+    font-size: 12px !important;
+  }
+
+  .search {
+    padding: 0px 0px !important;
+  }
+
+  .lastModified {
+    line-height: 3px;
+  }
+
+  .CreditCardImage,
+  .paypalImage,
+  .uploadImage {
+    width: 90%;
+    height: 100%;
+  }
+
+  .InnerUploadImage {
+    font-size: 1vw;
+  }
+
+  .InnerUploadImage svg {
+    font-size: 16px !important;
+  }
+
+  .ChartDiv {
+    height: 130px;
+  }
+
+  .timeline {
+    font-size: 1.8vw;
+  }
+
+  .progressBar {
+    width: 65px;
+  }
+
+  .AddProjectButton {
+    font-size: 11px !important;
+  }
+
+  .AddButton,
+  .moreButton {
+    height: 30px;
+  }
+
+  .ManageDiv svg {
+    font-size: 20px !important;
+  }
+
+  .ManageDivTitle {
+    font-size: 1.2vw !important;
+  }
+
+  .day {
+    font-size: 12px !important;
+  }
+
+  .projectLogo {
+    padding: 8px;
+  }
+
+  .projectLogo svg {
+    font-size: 1.3rem;
+  }
+
+  .ProjectTitle {
+    font-size: 1.5vw !important;
+  }
+
+  .carouselDiv img {
+    height: 7vw;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .middle {
+    padding: 16px 20px 0px 20px !important;
+  }
+
+  .menuDiv,
+  .menuActiveDiv {
+    height: 50px !important;
+    width: 80% !important;
+    font-size: 10px;
+  }
+
+  .menuDiv svg,
+  .menuActiveDiv svg {
+    font-size: 17px;
+  }
+
+  .heading {
+    font-size: 2vw !important;
+  }
+
+  .select {
+    font-size: 12px !important;
+  }
+
+  .MuiMenuItem-root {
+    font-size: 12px !important;
+  }
+
+  .search .MuiInputBase-root {
+    font-size: 12px;
+  }
+
+  .search {
+    height: 2.8vw;
+  }
+
+  .lastModified {
+    line-height: 2px;
+  }
+
+  .paypalImage,
+  .CreditCardImage,
+  .help {
+    border-radius: 6px;
+    box-shadow: 0px 5px 8px 0px #a0999959;
+  }
+
+  .help {
+    height: 55%;
+  }
+
+  .help .MuiTypography-root {
+    font-size: 1.3vw;
+  }
+
+  .help a {
+    font-size: 0.9vw;
+  }
+
+  .help:after {
+    top: 55%;
+    border: 13px solid black;
+    border-color: transparent transparent #fff #fff;
+  }
+
+  .projectLogo {
+    padding: 6px;
+  }
+
+  .lorem {
+    font-size: 9px !important;
+  }
+
+  .FileManager {
+    font-size: 1.6vw;
+  }
+
+  .AddButton,
+  .AddProjectButton,
+  .moreButton {
+    height: 23px;
+    border-radius: 5px !important
+  }
+
+  .AddButton {
+    min-width: 40px !important;
+  }
+
+  .AddButton svg {
+    font-size: 13px !important;
+  }
+
+  .moreButton {
+    min-width: 25px !important;
+  }
+
+  .moreButton svg {
+    font-size: 12px !important;
+  }
+
+  .carouselDiv .react-multiple-carousel__arrow {
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .react-multiple-carousel__arrow--left {
+    left: 0 !important;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: 0 !important;
+  }
+
+  .progressBar {
+    width: 50px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .homeIcon {
+    width: 3vw;
+  }
+
+  .logoDiv p {
+    font-size: 12px;
+  }
+
+  .menuDiv,
+  .menuActiveDiv {
+    width: 100% !important;
+    border-radius: 10px;
+  }
+
+  .heading {
+    font-size: 1.7vw !important;
+    margin-top: 5px !important;
+  }
+
+  .select .MuiSelect-select {
+    font-size: 11px;
+  }
+
+  .search {
+    width: 9vw;
+  }
+
+  .search button {
+    padding: 2px;
+  }
+
+  .search button svg {
+    font-size: 16px;
+  }
+
+  .search .MuiInputBase-root {
+    font-size: 12px;
+  }
+
+  .select {
+    font-size: 11px !important;
+  }
+
+  .month {
+    font-size: 11px !important;
+  }
+
+  .monthDiv {
+    column-gap: 5px !important;
+  }
+
+  .ChartSelect label {
+    font-size: 11px !important;
+    margin-top: 4px;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 80px;
+    height: 22px;
+    font-size: 10px;
+  }
+
+  .ChartSelect .MuiInputBase-root .MuiSelect-select {
+    padding: 8.5px 10px 8.5px 5px !important;
+  }
+
+  .MuiMenuItem-root {
+    font-size: 12px !important;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    height: 16px !important;
+    width: 12% !important;
+  }
+
+  .leftArrow svg,
+  .rightArrow svg {
+    font-size: 16px !important;
+  }
+
+  .amount {
+    font-size: 2.4vw;
+  }
+
+  .pieChart ul {
+    font-size: 11px;
+  }
+
+  .ChartDiv {
+    height: 195px;
+  }
+
+  .method {
+    font-size: 2vw;
+  }
+
+  .lastModified {
+    font-size: 1.3vw;
+  }
+
+  .timelineDiv {
+    border-radius: 15px;
+  }
+
+  .timeline {
+    font-size: 2.1vw;
+  }
+
+  .day {
+    font-size: 11px !important;
+  }
+
+  .timelineHeader {
+    padding: 12px 15px 10px 15px !important;
+  }
+
+  .AddProjectButton {
+    font-size: 9px !important;
+  }
+
+  .AddProjectButton .MuiButton-startIcon {
+    margin-right: 4px;
+  }
+
+  .AddProjectButton svg {
+    font-size: 16px !important;
+  }
+
+  .progressBar {
+    width: 35px;
+  }
+
+  .help:after {
+    left: 94%;
+  }
+
+  .help a {
+    font-size: 1vw;
+  }
+
+  .help a svg {
+    font-size: 0.7rem !important;
+  }
+
+  .ProjectPeaceDiv {
+    border-radius: 15px;
+  }
+
+  .projectLogo {
+    padding: 4px 9px;
+    border-radius: 6px;
+  }
+
+  .projectLogo svg {
+    font-size: 16px !important;
+  }
+
+  .ProjectTitle {
+    font-size: 1.7vw !important;
+  }
+
+  .icons {
+    height: 3vw !important;
+    width: 3vw !important;
+  }
+
+  .FileManager {
+    font-size: 1.8vw;
+  }
+
+  .ManageDiv svg {
+    font-size: 20px !important;
+  }
+
+  .ManageDivTitle {
+    font-size: 1.4vw !important;
+  }
+
+  .created {
+    font-size: 1.1vw !important;
+  }
+
+  .carouselDiv img {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width:800px) {
+
+  .InnerBox {
+    padding: 5rem 2rem 5rem 2rem !important;
+  }
+
+  .menuDiv,
+  .menuActiveDiv {
+    width: 60% !important;
+  }
+
+  .middle {
+    padding: 10px 10px 10px 10px !important;
+  }
+
+  .heading {
+    font-size: 3vw !important;
+  }
+
+  .search {
+    width: 13vw;
+  }
+
+  .select .MuiSelect-select {
+    font-size: 12px;
+  }
+
+  .sales {
+    font-size: 3.3vw !important;
+  }
+
+  .MuiMenuItem-root {
+    min-height: 25px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-left: 13px !important;
+    padding-right: 13px !important;
+  }
+
+  .search .MuiInputBase-root {
+    font-size: 14px;
+  }
+
+  .month {
+    font-size: 13px !important;
+  }
+
+  .monthDiv {
+    column-gap: 10px !important;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 100px;
+    height: 27px;
+    font-size: 12px;
+  }
+
+  .ChartSelect label {
+    font-size: 12px !important;
+  }
+
+  .Charts {
+    width: 48vw !important;
+    height: 23vw !important;
+  }
+
+  .ChartDiv {
+    height: 235px;
+  }
+
+  .method {
+    font-size: 2.6vw;
+  }
+
+  .lastModified {
+    line-height: 2px;
+    font-size: 11px;
+  }
+
+  .uploadImage {
+    padding: 1vw;
+  }
+
+  .InnerUploadImage {
+    font-size: 1.4vw;
+    line-height: 2.3vw;
+  }
+
+  .InnerUploadImage svg {
+    font-size: 18px !important;
+  }
+
+  .timeline {
+    font-size: 2.5vw;
+  }
+
+  .AddProjectButton {
+    font-size: 10px !important;
+  }
+
+  .progressBar {
+    width: 50px;
+  }
+
+  .boy {
+    width: 13vw;
+  }
+
+  .help {
+    width: 35% !important;
+    height: 55%;
+  }
+
+  .help:after {
+    left: 98%;
+  }
+
+  .help .MuiTypography-root {
+    font-size: 1.9vw;
+  }
+
+  .help a {
+    font-size: 1.3vw;
+  }
+
+  .project {
+    padding: 10px 20px;
+  }
+
+  .projectLogo {
+    padding: 12px;
+  }
+
+  .projectLogo svg {
+    font-size: 1.5rem !important;
+  }
+
+  .ProjectTitle {
+    font-size: 2.6vw !important;
+  }
+
+  .icons {
+    height: 4.5vw !important;
+    width: 4.5vw !important;
+  }
+
+  .icons svg {
+    font-size: 2.2vw !important;
+  }
+
+  .lorem {
+    font-size: 11px !important;
+  }
+
+  .FileManager {
+    font-size: 2.6vw;
+  }
+
+  .AddButton,
+  .AddProjectButton,
+  .moreButton {
+    height: 27px;
+  }
+
+  .AddButton {
+    padding: 4px 3px !important;
+    font-size: 12px !important;
+  }
+
+  .AddButton {
+    min-width: 64px !important;
+  }
+
+  .AddButton .MuiButton-startIcon {
+    margin-right: 8px;
+  }
+
+  .AddButton svg {
+    font-size: 18px !important;
+  }
+
+  .moreButton {
+    min-width: 28px !important;
+  }
+
+  .ManageDivTitle {
+    font-size: 2vw !important;
+  }
+
+  .ManageDiv svg {
+    font-size: 1.5rem !important;
+  }
+
+  .created {
+    font-size: 1.6vw !important;
+  }
+
+  .carouselDiv img {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .carouselDiv {
+    position: relative;
+    width: 375px;
+  }
+
+  .carouselDiv ul {
+    gap: 1.5px;
+  }
+}
+
+@media (max-width:700px) {
+
+  .homeIcon {
+    width: 4vw;
+  }
+
+  .menuDiv,
+  .menuActiveDiv {
+    width: 70% !important;
+  }
+
+  .middle {
+    padding: 10px 10px 10px 10px !important;
+  }
+
+  .heading {
+    font-size: 3.5vw !important;
+  }
+
+  .search {
+    width: 16vw;
+    height: 3.8vw;
+  }
+
+  .select {
+    font-size: 12px !important;
+  }
+
+  .MuiMenuItem-root {
+    min-height: 25px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-left: 13px !important;
+    padding-right: 13px !important;
+  }
+
+  .search .MuiInputBase-root {
+    font-size: 12px;
+  }
+
+  .month {
+    font-size: 12px !important;
+  }
+
+  .amount {
+    font-size: 3vw;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 85px;
+    height: 23px;
+    font-size: 10px;
+  }
+
+  .Charts {
+    width: 50vw !important;
+    height: 25vw !important;
+  }
+
+  .method {
+    font-size: 2.8vw;
+  }
+
+  .lastModified {
+    line-height: 2px;
+    /* font-size: 11px; */
+  }
+
+  .AddProjectButton {
+    font-size: 10px !important;
+  }
+
+  .progressBar {
+    width: 45px;
+  }
+
+  .NeedHelpDiv {
+    padding-right: 20px;
+  }
+
+  .boy {
+    width: 15vw;
+  }
+
+  .help {
+    width: 40% !important;
+  }
+
+  .help a {
+    font-size: 1.5vw;
+  }
+
+  .help .MuiTypography-root {
+    font-size: 2.3vw;
+  }
+
+  .project {
+    padding: 10px 20px;
+  }
+
+  .projectLogo {
+    padding: 12px;
+  }
+
+  .projectLogo svg {
+    font-size: 1.5rem !important;
+  }
+
+  .lorem {
+    font-size: 10px !important;
+  }
+
+  .icons {
+    height: 5vw !important;
+    width: 5vw !important;
+  }
+
+  .icons svg {
+    font-size: 2.2vw !important;
+  }
+
+  .AddButton {
+    padding: 4px 3px !important;
+    font-size: 12px !important;
+  }
+
+  .AddButton {
+    min-width: 64px !important;
+  }
+
+  .AddButton .MuiButton-startIcon {
+    margin-right: 8px;
+  }
+
+  .AddButton svg {
+    font-size: 18px !important;
+  }
+
+  .moreButton {
+    min-width: 28px !important;
+  }
+
+  .ManageDiv svg {
+    font-size: 1.5rem !important;
+  }
+
+  .carouselDiv img {
+    border-radius: 15px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .carouselDiv {
+    position: relative;
+    width: 345px;
+  }
+
+  .carouselDiv ul {
+    gap: 1.5px;
+  }
+
+}
+
+@media (max-width :600px) {
+
+  .menuDiv,
+  .menuActiveDiv {
+    height: 44px !important;
+    width: 75% !important;
+    border-radius: 11px;
+  }
+
+  .month {
+    font-size: 10px !important;
+  }
+
+  .monthDiv {
+    column-gap: 6px !important;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 77px;
+    height: 23px;
+    font-size: 10px;
+  }
+
+  .MuiSelect-icon {
+    font-size: 20px !important;
+  }
+
+  .info {
+    font-size: 10px;
+  }
+
+  .info span svg {
+    width: 12px !important;
+  }
+
+  .ChartDiv {
+    height: 210px;
+  }
+
+  .InnerUploadImage svg {
+    font-size: 12px !important;
+  }
+
+  .day {
+    font-size: 11px !important;
+  }
+
+  .progressBar {
+    width: 40px;
+    height: 8px !important;
+  }
+
+  .AddProjectButton svg {
+    font-size: 14px !important;
+  }
+
+  .AddProjectButton {
+    font-size: 8px !important;
+    min-width: 42px !important;
+    padding: 4px 4px !important;
+  }
+
+  .AddProjectButton .MuiButton-startIcon {
+    margin-right: 1px;
+  }
+
+  .moreButton {
+    min-width: 27px !important;
+  }
+
+  .boy {
+    width: 17vw;
+  }
+
+  .help .MuiTypography-root {
+    font-size: 2.5vw;
+  }
+
+  .help {
+    width: 55% !important;
+  }
+
+  .help:after {
+    left: 95%;
+  }
+
+  .help a {
+    font-size: 1.7vw;
+  }
+
+  .NeedHelpDiv {
+    padding-right: 35px;
+  }
+
+  .projectLogo {
+    padding: 7px;
+  }
+
+  .projectLogo svg {
+    font-size: 20px !important;
+  }
+
+  .ProjectTitle {
+    font-size: 3.2vw !important;
+  }
+
+  .lorem {
+    font-size: 10px !important;
+  }
+
+  .icons {
+    height: 6vw !important;
+    width: 6vw !important;
+  }
+
+  .icons svg {
+    font-size: 3.2vw !important;
+  }
+
+  .FileManager {
+    font-size: 3.4vw;
+  }
+
+  .ManageDivTitle {
+    font-size: 2.5vw !important;
+  }
+
+  .created {
+    font-size: 2vw !important;
+  }
+
+  .carouselDiv img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .carouselDiv {
+    width: 280px;
+  }
+
+  .carouselDiv ul {
+    gap: 0.5px;
+  }
+
+  .MuiMenuItem-root {
+    min-height: 25px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-left: 13px !important;
+    padding-right: 13px !important;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .OuterBox {
+    padding: 15px !important;
+  }
+
+  .InnerBox {
+    padding: 2rem 1rem 2rem 1rem !important;
+  }
+
+  .homeIcon {
+    width: 6vw;
+  }
+
+  .menuDiv,
+  .menuActiveDiv {
+    font-size: 9px;
+  }
+
+  .heading {
+    font-size: 4.3vw !important;
+  }
+
+  .search {
+    width: 20vw;
+    height: 5vw;
+  }
+
+  .sales {
+    font-size: 4.7vw !important;
+  }
+
+  .ChartSelect .MuiInputLabel-root {
+    margin-top: 4px;
+  }
+
+  .ChartSelect label {
+    font-size: 10px !important;
+  }
+
+  .ChartSelect .MuiInputBase-root {
+    width: 72px;
+    height: 22px;
+    font-size: 8px;
+  }
+
+  .middle {
+    padding: 10px 0px 10px 0px !important;
+  }
+
+  .month {
+    font-size: 10px !important;
+  }
+
+  .Charts {
+    width: 62vw !important;
+    height: 33vw !important;
+  }
+
+  .amount {
+    font-size: 4vw;
+  }
+
+  .info svg {
+    font-size: 11px !important;
+  }
+
+  .ChartDiv {
+    height: 215px;
+  }
+
+  .method {
+    font-size: 3.8vw;
+  }
+
+  .lastModified {
+    font-size: 10px;
+  }
+
+  .timeline {
+    font-size: 3.5vw;
+  }
+
+  .boy {
+    width: 20vw;
+  }
+
+  .help a {
+    font-size: 1.9vw;
+  }
+
+  .ProjectTitle {
+    font-size: 4vw !important;
+  }
+
+  .icons {
+    height: 7vw !important;
+    width: 7vw !important;
+  }
+
+  .FileManager {
+    font-size: 4vw;
+  }
+
+  .ManageDivTitle {
+    font-size: 3vw !important;
+  }
+
+  .created {
+    font-size: 2.3vw !important;
+  }
+
+  .help .MuiTypography-root {
+    font-size: 3vw;
+  }
+
+  .project {
+    padding: 10px 10px;
+  }
+
+  .carouselDiv img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .carouselDiv {
+    width: 300px;
+  }
+
+  .carouselDiv ul {
+    gap: 0.5px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .menuDiv,
+  .menuActiveDiv {
+    font-size: 8px;
+  }
+
+  .monthDiv {
+    column-gap: 4px !important;
+  }
+
+  .help {
+    width: 60% !important;
+  }
+
+  .FileManager {
+    font-size: 4.5vw;
+  }
+
+  .carouselDiv img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .carouselDiv {
+    width: 293px;
+  }
+
+  .carouselDiv ul {
+    gap: 0.5px;
   }
 }
