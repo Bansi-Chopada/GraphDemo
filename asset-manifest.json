@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/graphDemo/static/css/main.098ed846.css",
-    "main.js": "/graphDemo/static/js/main.43fe9c98.js",
+    "main.js": "/graphDemo/static/js/main.058057a7.js",
     "static/media/img3.jpg": "/graphDemo/static/media/img3.1b449876fab85d5eefa7.jpg",
     "static/media/img1.jpg": "/graphDemo/static/media/img1.78925890bab01d74bd92.jpg",
     "static/media/img4.jpg": "/graphDemo/static/media/img4.3107e9d9ade6fa93c328.jpg",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.098ed846.css",
-    "static/js/main.43fe9c98.js"
+    "static/js/main.058057a7.js"
   ]
 }
