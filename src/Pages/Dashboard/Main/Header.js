@@ -20,7 +20,7 @@ export const Header = () => {
                 justifyContent={{ xs: 'center', md: 'flex-start' }}
             >
                 <Typography variant="subtitle1" className="heading">
-                    Welcome to the Dashboard1
+                    Welcome to the Dashboard
                 </Typography>
             </Grid>
             <Grid
