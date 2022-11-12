@@ -1,6 +1,5 @@
 {
   "name": "graphdemo",
-  "homepage": "https://Bansi-Chopada.github.io/graphDemo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +15,6 @@
     "dayjs": "^1.11.5",
     "gh-pages": "^4.0.0",
     "moment": "^2.29.4",
-    "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.2",
@@ -25,8 +23,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "set \"GENERATE_SOURCEMAP=false\" &&  react-scripts build",
     "test": "react-scripts test",
